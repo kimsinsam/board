@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<!--  ㅁㄴㅇㄹ-->
 	<form action="${pageContext.request.contextPath}/boardAdd" method="post">
 		<div>
 			제목 : <input type="text" name="boardTitle"/>
