@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+
+ 
+<mapper namespace="kim.sin.sam.service.BoardMapper">
+ 	
+ 	<select id="SelectRemoveOne" parameterType="int" resultType="kim.sin.sam.service.Board">
+ 		SELECT board_Writer 
+ 		FROM board 
+ 		WHERE board_no=#{boardNo}
+ 	</select>
+ 	
+ 	<delete id="removeBoard" parameterType="kim.sin.sam.service.Board">
+ 		DELETE FROM board 
+ 		WHERE board_no=#{boardNo}
+ 		AND board_pw=#{boardPw}
+ 	</delete>
+</mapper>
