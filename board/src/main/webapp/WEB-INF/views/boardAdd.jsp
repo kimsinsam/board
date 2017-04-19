@@ -8,6 +8,7 @@
 </head>
 <body>
 	<!--  ㅁㄴㅇㄹ-->
+	<!-- git hub test -->
 	<form action="${pageContext.request.contextPath}/boardAdd" method="post">
 		<div>
 			제목 : <input type="text" name="boardTitle"/>
